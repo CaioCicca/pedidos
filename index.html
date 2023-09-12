@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <main>
+        <div id="cadastro">
+            <h2>Cadastro de pedidos</h2>
+            <div id="container">
+                <input type="text" name="cliente" id="cliente" placeholder="Cliente">
+                <input type="number" name="mesa" id="mesa" placeholder="Mesa">
+                <input type="text" name="descricao" id="descricao" placeholder="Descricao"> 
+                <button id="botaoCadastrar" onclick="createPedidos()">Cadastrar</button>
+                <button id="botaoEditar" class="hidden" onclick="edit()">Editar</button>
+                <p id="msg" class="hidden"></p>
+                <p id="erro-msg" class="hidden"></p>
+            </div>
+        </div>
+
+        <div id="pedidos">
+            <h2 id="contador">Lista de Pedidos</h2>
+            <div id="lista" class="hidden"></div>
+        </div>
+    </main>
 </body>
+
 </html>

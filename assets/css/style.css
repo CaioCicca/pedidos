@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#cadastro {
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 230px;
+}
+
+#pedidos {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 550px;
+    overflow-y: auto;
+
+}
+
+#botaoCadastrar{
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+}
+
+#botaoEditar{
+    background-color: rgb(63, 63, 237);
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+}
+
+.hidden {
+    display: none;
+}
